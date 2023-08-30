@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="net.feria_facturacion_feria_jar_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>net.feria.entity.DetalleFactura</class>
+    <class>net.feria.entity.Usuario</class>
+    <class>net.feria.entity.Item</class>
+    <class>net.feria.entity.Cliente</class>
+    <class>net.feria.entity.InformacionFiscal</class>
+    <class>net.feria.entity.FacturasCabecera</class>
+    <class>net.feria.entity.ComprobanteElectronico</class>
+    <class>net.feria.entity.DetalleFactura_1</class>
+    <class>net.feria.entity.FormaPago</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5100/feria"/>
+      <property name="javax.persistence.jdbc.user" value="admin"/>
+      <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="admin"/>
+    </properties>
+  </persistence-unit>
+</persistence>

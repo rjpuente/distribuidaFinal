@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <sectionGroup name="applicationSettings" type="System.Configuration.ApplicationSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <section name="ServicioGeneracionComprobantesElectronicos.My.MySettings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+    </sectionGroup>
+  </configSections>
+  <system.diagnostics>
+    <sources>
+      <!-- En esta sección se define la configuración del registro para My.Application.Log -->
+      <source name="DefaultSource" switchName="DefaultSwitch">
+        <listeners>
+          <add name="FileLog" />
+          <!-- Quite los comentarios de la sección posterior para escribir en el registro de eventos de la aplicación -->
+          <!--<add name="EventLog"/>-->
+        </listeners>
+      </source>
+    </sources>
+    <switches>
+      <add name="DefaultSwitch" value="Information" />
+    </switches>
+    <sharedListeners>
+      <add name="FileLog" type="Microsoft.VisualBasic.Logging.FileLogTraceListener, Microsoft.VisualBasic, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" initializeData="FileLogWriter" />
+      <!-- Quite los comentarios de la sección posterior y reemplace APPLICATION_NAME con el nombre de su aplicación para escribir en el registro de eventos de la aplicación -->
+      <!--<add name="EventLog" type="System.Diagnostics.EventLogTraceListener" initializeData="APPLICATION_NAME"/> -->
+    </sharedListeners>
+  </system.diagnostics>
+  <applicationSettings>
+    <ServicioGeneracionComprobantesElectronicos.My.MySettings>
+      <setting name="FRECUENCIA_EJECUCION" serializeAs="String">
+        <value>60</value>
+      </setting>
+      <setting name="CONTRASENA_FIRMA_ELECTRONICA" serializeAs="String">
+        <value>Criollo2105</value>
+      </setting>
+      <setting name="CONTRASENA_POSTGRES" serializeAs="String">
+        <value>admin</value>
+      </setting>
+      <setting name="ESTABLECIMIENTO_MATRIZ" serializeAs="String">
+        <value>001</value>
+      </setting>
+      <setting name="FECHA_ARRANQUE_EMISION_ELECTRONICA" serializeAs="String">
+        <value>2023-03-08</value>
+      </setting>
+      <setting name="MAXIMO_INTENTOS_ENTRE_TRANSICIONES" serializeAs="String">
+        <value>10</value>
+      </setting>
+      <setting name="PUERTO_SQL_SERVER" serializeAs="String">
+        <value>5100</value>
+      </setting>
+      <setting name="NUMERO_MAXIMO_LINEAS_RIDE" serializeAs="String">
+        <value>50</value>
+      </setting>
+      <setting name="SERVIDOR_POSTGRES" serializeAs="String">
+        <value>localhost</value>
+      </setting>
+      <setting name="TAMANO_FUENTE_CODIGO_BARRAS" serializeAs="String">
+        <value>24</value>
+      </setting>
+      <setting name="TAMANO_FUENTE_DETALLE" serializeAs="String">
+        <value>8</value>
+      </setting>
+      <setting name="TAMANO_FUENTE_ESTANDAR" serializeAs="String">
+        <value>8</value>
+      </setting>
+      <setting name="TAMANO_FUENTE_NUMEROS" serializeAs="String">
+        <value>8</value>
+      </setting>
+      <setting name="TAMANO_GRID_RIDE" serializeAs="String">
+        <value>13</value>
+      </setting>
+      <setting name="TIPO_AMBIENTE_ACTUAL" serializeAs="String">
+        <value>1</value>
+      </setting>
+      <setting name="TIPO_FUENTE_CODIGO_BARRAS" serializeAs="String">
+        <value>BC C39 2 to 1 Narrow</value>
+      </setting>
+      <setting name="TIPO_FUENTE_DETALLE" serializeAs="String">
+        <value>Arial Narrow</value>
+      </setting>
+      <setting name="TIPO_FUENTE_ESTANDAR" serializeAs="String">
+        <value>Arial</value>
+      </setting>
+      <setting name="TIPO_FUENTE_NUMEROS" serializeAs="String">
+        <value>Bitstream Vera Sans Mono</value>
+      </setting>
+    </ServicioGeneracionComprobantesElectronicos.My.MySettings>
+  </applicationSettings>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.8" />
+  </startup>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Runtime.CompilerServices.Unsafe" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-6.0.0.0" newVersion="6.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Memory" publicKeyToken="cc7b13ffcd2ddd51" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.1.2" newVersion="4.0.1.2" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Buffers" publicKeyToken="cc7b13ffcd2ddd51" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.3.0" newVersion="4.0.3.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+</configuration>

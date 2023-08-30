@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<factura id="comprobante" version="1.0.0">
+  <infoTributaria>
+    <ambiente>2</ambiente>
+    <tipoEmision>1</tipoEmision>
+    <razonSocial>Representaciones Metalmecanicas C.A.</razonSocial>
+    <nombreComercial>Remeco</nombreComercial>
+    <ruc>1790024474001</ruc>
+    <claveAcceso>3107202301179002447400120010020001401410014014115</claveAcceso>
+    <codDoc>01</codDoc>
+    <estab>001</estab>
+    <ptoEmi>002</ptoEmi>
+    <secuencial>000140141</secuencial>
+    <dirMatriz>Atahualpa 1116 y Amazonas</dirMatriz>
+  </infoTributaria>
+  <infoFactura>
+    <fechaEmision>31/07/2023</fechaEmision>
+    <dirEstablecimiento>Atahualpa 1116 y Amazonas</dirEstablecimiento>
+    <contribuyenteEspecial>194</contribuyenteEspecial>
+    <obligadoContabilidad>SI</obligadoContabilidad>
+    <tipoIdentificacionComprador>04</tipoIdentificacionComprador>
+    <guiaRemision>001-002-000136089</guiaRemision>
+    <razonSocialComprador>SERINTU S.A.</razonSocialComprador>
+    <identificacionComprador>0992519215001</identificacionComprador>
+    <direccionComprador>LOTIZACION SANTA ADRIANA SOLA 5 FRENTE AL COLEGIO AMERICANO</direccionComprador>
+    <totalSinImpuestos>101.63</totalSinImpuestos>
+    <totalDescuento>17.94</totalDescuento>
+    <totalConImpuestos>
+      <totalImpuesto>
+        <codigo>2</codigo>
+        <codigoPorcentaje>2</codigoPorcentaje>
+        <baseImponible>101.63</baseImponible>
+        <tarifa>12</tarifa>
+        <valor>12.20</valor>
+      </totalImpuesto>
+      <totalImpuesto>
+        <codigo>2</codigo>
+        <codigoPorcentaje>3</codigoPorcentaje>
+        <baseImponible>0.00</baseImponible>
+        <tarifa>14</tarifa>
+        <valor>0.00</valor>
+      </totalImpuesto>
+      <totalImpuesto>
+        <codigo>2</codigo>
+        <codigoPorcentaje>0</codigoPorcentaje>
+        <baseImponible>0.00</baseImponible>
+        <tarifa>0</tarifa>
+        <valor>0.00</valor>
+      </totalImpuesto>
+    </totalConImpuestos>
+    <propina>0.00</propina>
+    <importeTotal>113.83</importeTotal>
+    <moneda>DOLAR</moneda>
+    <pagos>
+      <pago>
+        <formaPago>20</formaPago>
+        <total>113.83</total>
+        <plazo>0</plazo>
+        <unidadTiempo>Días</unidadTiempo>
+      </pago>
+    </pagos>
+  </infoFactura>
+  <detalles>
+    <detalle>
+      <codigoPrincipal>541105</codigoPrincipal>
+      <descripcion>REDUCTOR FCNDK50-10/3F/1HP/4P/80/2.1</descripcion>
+      <cantidad>1.00</cantidad>
+      <precioUnitario>119.57</precioUnitario>
+      <descuento>17.94</descuento>
+      <precioTotalSinImpuesto>101.63</precioTotalSinImpuesto>
+      <detallesAdicionales>
+        <detAdicional nombre="porcentajeDescuento" valor="15.00" />
+      </detallesAdicionales>
+      <impuestos>
+        <impuesto>
+          <codigo>2</codigo>
+          <codigoPorcentaje>2</codigoPorcentaje>
+          <tarifa>12</tarifa>
+          <baseImponible>101.63</baseImponible>
+          <valor>12.20</valor>
+        </impuesto>
+      </impuestos>
+    </detalle>
+  </detalles>
+  <infoAdicional>
+    <campoAdicional nombre="datosCliente">106809||046026072||RP01||386607||386607 - oc 0357</campoAdicional>
+    <campoAdicional nombre="vencimientos">29/09/2023   113.83</campoAdicional>
+  </infoAdicional>
+</factura>
